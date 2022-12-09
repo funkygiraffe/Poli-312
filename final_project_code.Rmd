@@ -96,7 +96,7 @@ log_plot <- ggplot(h, aes(x = log_gdp,
 means <- h %>%
         group_by(country) %>%
         summarize(avg_hap = mean(life_ladder), 
-                  avg_gdp = mean(log_gdp, na.rm = T)) # THINK ABOUT WHAT THIS NA RM DOES
+                  avg_gdp = mean(log_gdp, na.rm = T))
 
 # code in region based on country
 means <- means %>%
